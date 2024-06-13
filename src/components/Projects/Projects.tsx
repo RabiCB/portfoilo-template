@@ -10,7 +10,7 @@ const Projects = () => {
     <section id="projects" className="relative py-8 lg:py-12 xl:py-20 px-4 sm:px-8 lg:px-12  bg-white bg-gradient-to-tr from-blue-500/10 via-purple-500/10 to-cyan-500/10">
         <div className="mx-auto max-w-screen-2xl">
       <h1 className="lg:text-3xl text-xl font-semibold text-[#2A1863] ">Projects</h1>
-      <div className="grid grid-cols-2 gap-4  mt-4 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1 mt-4 lg:grid-cols-3 xl:grid-cols-4">
         {projects?.map((project) => (
           <div
             key={project?.name}
@@ -33,7 +33,7 @@ const Projects = () => {
                 <RxExternalLink className="lg:text-[20px] text-[20px]" />
               </Link>
             </div>
-            {/* <a href={project.link} className='bg-blue-500 p-2 text-sm lg:text-base rounded-md bg-gradient-to-br from-purple-600 via-violet-600 to-indigo-600 inline-flex my-1 group/btn'>View Project</a> */}
+            
           </div>
         ))}
       </div>

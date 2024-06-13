@@ -3,7 +3,7 @@ import { data } from "../../../utils/Data";
 
 const LandingPage = () => {
   return (
-    <section className="relative grid lg:grid-cols-2 max-lg:mt-[10%] max-w-screen-2xl mx-auto  min-h-[100vh]  gap-10 sm:gap-16 lg:gap-20 items-center  text-white">
+    <section className="relative grid lg:grid-cols-2 max-lg:mt-[16%] max-w-screen-2xl mx-auto  min-h-[100vh]  gap-10 sm:gap-16 lg:gap-20 items-center  text-white/80">
       <div>
         <h1 className="lg:text-3xl text-xl font-semibold  my-1">John Murphy</h1>
         <h2 className=" lg:text-xl text-base font-medium my-1">
@@ -36,7 +36,7 @@ const LandingPage = () => {
         </a>
       </div>
       <div>
-        <img src="/images/me.jpeg" loading="lazy" className="w-full h-[480px] rounded-lg opacity-80    object-cover"/>
+        <img src="/images/me.jpeg"  className="w-full h-[480px] rounded-lg opacity-80    object-cover"/>
       </div>
     </section>
   );

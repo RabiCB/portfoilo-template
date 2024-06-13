@@ -23,7 +23,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: props) => {
               : "-translate-x-full transition-all duration-300 ease-in-out"
           } bg-white  flex flex-col justify-between w-[360px] max-[400px]:w-[280px] h-screen`}
         >
-          <ul className="flex gap-4 py-8 px-8 font-semibold flex-col">
+          <ul className="flex gap-4 py-4 px-8 font-semibold flex-col">
             <a href="#" className="lg:text-3xl text-2xl">
               JM
             </a>
@@ -43,7 +43,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: props) => {
           </ul>
         </div>
         <div className="flex-grow w-full flex-1 relative  backdrop-blur-sm">
-          <div className="absolute right-3 top-8 rounded-lg p-1 border-[1px]">
+          <div className="absolute right-2 top-4 rounded-lg p-1 border-[1px]">
             <RiCloseFill size={24} color="white" />
           </div>
         </div>

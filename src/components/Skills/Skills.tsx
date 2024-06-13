@@ -17,9 +17,10 @@ const Skills = () => {
                 Here are some of the skills I possess: React.js, Next.js, Html
                 and Css
               </p>
-              <a
+              <Link
                 className="gap-4 bg-transparent border-[1px]  p-2 text-sm lg:text-base rounded-md  inline-flex my-1 group/btn"
-                href="/projects"
+                href="/resume_temp.pdf"
+                target="_blank"
               >
                 Download Resume
                 <div className="flex items-center opacity-50 group-hover/btn:opacity-100 transition-opacity ">
@@ -40,7 +41,7 @@ const Skills = () => {
                     <path d="M7.293 1.707L13.586 8l-6.293 6.293a1 1 0 001.414 1.414l7-7a.999.999 0 000-1.414l-7-7a1 1 0 00-1.414 1.414z"></path>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </header>
           </div>
 
