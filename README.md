@@ -1,4 +1,4 @@
-# portfolio
+# Introduction
 
 Welcome to the portfolio template built with Next.js which is fully server side! This website has all the features such as SEO (meta description, etc.). One can change the components according to their requirements.
 
