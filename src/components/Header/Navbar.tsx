@@ -30,19 +30,19 @@ const Navbar = () => {
     <nav>
       <div
         ref={ref}
-        className=" relative z-[500]  flex items-center justify-between h-24 text-white  font-medium text-sm"
+        className=" relative z-[500] pt-32 mx-auto max-w-screen-2xl flex items-center justify-between h-24 text-white  font-medium text-sm"
       >
         <a href="#" className="lg:text-3xl text-2xl">
           JM
         </a>
         <ul className="mt-2 gap-6 items-center font-semibold lg:flex hidden">
-         {
-            Navlinks?.map((navlink)=>{
-               return <li key={navlink?.link}>
+          {Navlinks?.map((navlink) => {
+            return (
+              <li key={navlink?.link}>
                 <a href={navlink?.link}>{navlink?.name}</a>
               </li>
-            })
-         } 
+            );
+          })}
         </ul>
         <div
           onClick={() => setIsSidebarOpen(true)}

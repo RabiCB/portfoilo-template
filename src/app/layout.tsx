@@ -4,7 +4,7 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
-  title: "John Murphy-Frontend Developer",
+  title: "John Murphy | Frontend Developer",
   openGraph: {
     title: "John Murphy-Frontend developer ",
     images: "/me.jpeg",
