@@ -1,7 +1,10 @@
-# My Portfolio
+# portfolio
 
 Welcome to the portfolio template built with Next.js which is fully server side! This website has all the features such as SEO (meta description, etc.). One can change the components according to their requirements.
 
+## Additional features || Support
+
+Enhance your website's SEO ranking and indexing with improved link structure and SEO features, including customizable URLs, meta tags internal linking, mobile-friendly design, page load speed by using this template and rank higher in google search engines
 
 ## Technologies
 
@@ -26,5 +29,15 @@ Follow these simple steps to get the portfolio website up and running locally:
 
 1. **Clone the Repository**
 
-  ```bash
-  git clone https://github.com/RabiCB/Developer-Portfoilo-Template
+```bash
+git clone https://github.com/RabiCB/portfoilo-template
+
+## Tools Used 🛠️
+
+Vercel.
+
+## live link
+
+[Visit]https://portfoilo-template.vercel.app/
+
+```
