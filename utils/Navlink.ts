@@ -6,17 +6,17 @@ export const Navlinks = [
   },
   {
     name: "About",
-    link: "/#about",
+    link: "#about",
     active: false,
   },
   {
     name: "Contact",
-    link: "/#contact",
+    link: "#contact",
     active: false,
   },
   {
     name: "Projects",
-    link: "/#projects",
+    link: "#projects",
     active: false,
   },
 ];

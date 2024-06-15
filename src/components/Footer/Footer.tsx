@@ -9,6 +9,7 @@ const Footer = () => {
     <footer
       className="relative  py-8 lg:pt-12 xl:pt-20 px-4 sm:px-8 lg:px-12   text-sm  leading-6 pb-8 pt-12  text-medium bg-[#1E1243] bg-gradient-to-br "
       role="contentinfo"
+      id="contact"
     >
       <div className="max-w-screen-2xl mx-auto grid grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-6   text-white/80">
         <div>

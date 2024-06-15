@@ -8,35 +8,18 @@ import Link from "next/link";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: any) {
-      if (ref.current && !ref.current.contains(event?.target)) {
-        setIsSidebarOpen(false);
-      }
-    }
-    if (isSidebarOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isSidebarOpen]);
+  
 
   return (
-    <nav>
+    <nav >
       <div
-        ref={ref}
+       
         className=" relative z-[500] pt-32 mx-auto max-w-screen-2xl flex items-center justify-between h-24 text-white/80 font-medium text-sm"
       >
         <Link href="/" className="lg:text-3xl text-2xl">
           JM
         </Link>
-        <ul className="mt-2 gap-6 items-center font-semibold lg:flex hidden">
+        <ul  className="mt-2 gap-6 items-center font-semibold lg:flex hidden">
           {Navlinks?.map((navlink) => {
             return (
               <li key={navlink?.link}>
@@ -52,12 +35,14 @@ const Navbar = () => {
           <RiMenu3Fill size={24} />
         </div>
       </div>
+   
       {isSidebarOpen && (
         <Sidebar
           isSidebarOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
         />
       )}
+      
     </nav>
   );
 };

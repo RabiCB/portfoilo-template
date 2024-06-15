@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { RiCloseFill } from "react-icons/ri";
 import { Navlinks } from "../../../utils/Navlink";
 type props = {
@@ -13,10 +13,30 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: props) => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: any) {
+      if (ref.current && !ref.current.contains(event?.target)) {
+        setIsSidebarOpen(false);
+      }
+    }
+    if (isSidebarOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSidebarOpen]);
+
   return (
     <div className="fixed left-0 top-0 h-[100vh] w-full z-[999]">
       <div className="w-full h-full  flex flex-row ">
         <div
+          ref={ref}
           className={`${
             isSidebarOpen
               ? "translate-x-0 transition-all duration-300 ease-in-out "
