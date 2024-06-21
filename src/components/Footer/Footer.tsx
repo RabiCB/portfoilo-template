@@ -22,7 +22,7 @@ const Footer = () => {
           <ul>
             {Navlinks?.map((link) => (
               <li key={link?.name} className="my-1">
-                <Link target="_blank" href={`${link?.link}`}>
+                <Link target="_self"  href={`${link?.link}`}>
                   {link.name}
                 </Link>
               </li>
